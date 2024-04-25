@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Compra</title>
+    <link rel="stylesheet" href="comprafinal.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculadora">
+            <h2>Selecione o(s) produto(s)</h2>
+            <div id="vinhos">
+                <div class="item">
+                    <span>Luna Dorata (Branco)</span>
+                    <span>R$180</span>
+                    <input type="number" id="qtdLunaDorata" value="0">
+                </div>
+                <div class="item">
+                    <span>Incanto Toscano (Branco)</span>
+                    <span>R$190</span>
+                    <input type="number" id="qtdIncantoToscano" value="0">
+                </div>
+                <div class="item">
+                    <span>Charme de Provence (Branco)</span>
+                    <span>R$170</span>
+                    <input type="number" id="qtdCharmedeProvence" value="0">
+                </div>
+                <div class="item">
+                    <span>Élégance de la Loire (Espumante)</span>
+                    <span>R$180</span>
+                    <input type="number" id="qtdEleganceLoire" value="0">
+                </div>
+                <div class="item">
+                    <span>Vento del Veneto (Espumante)</span>
+                    <span>R$170</span>
+                    <input type="number" id="qtdVentodelVeneto" value="0">
+                </div>
+                <div class="item">
+                    <span>Dolce Vita (Tinto)</span>
+                    <span>R$190</span>
+                    <input type="number" id="qtdDolceVita" value="0">
+                </div>
+                <div class="item">
+                    <span>Mare d'Amore (Tinto)</span>
+                    <span>R$180</span>
+                    <input type="number" id="qtdMareAmore" value="0">
+                </div>
+                <div class="item">
+                    <span>Riserva Oro (Tinto)</span>
+                    <span>R$170</span>
+                    <input type="number" id="qtdRiservaOro" value="0">
+                </div>
+        <div id="formasPagamento">
+            <h2>Formas de Pagamento</h2>
+            <input type="radio" name="pagamento" value="cartao"> Cartão de Crédito<br>
+            <input type="radio" name="pagamento" value="boleto"> Boleto Bancário<br>
+        </div>
+        <div id="cupom">
+            <h2>Cupom de Desconto</h2>
+            <input type="text" id="cupomInput" placeholder="Insira o cupom">
+            <button onclick="validarCupom()">Aplicar Cupom</button>
+            <p id="cupomMsg"></p>
+        </div>
+    </div>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <div id="total"></div>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
